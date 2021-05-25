@@ -24,6 +24,7 @@ public class WocHomePage {
 
     @Test
     public void clickOnExamMenu(){
+
         driver.findElement(By.xpath("//*[@id=\"micon\"]/ul/li[6]/a")).click();
         wait = new WebDriverWait(driver, 10);
         String currentUrl = driver.getCurrentUrl();
